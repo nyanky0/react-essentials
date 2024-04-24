@@ -6,14 +6,11 @@
 //     );
 // }
 
-export default function TabButton({ label }) {
-    function handleClick() {
-        console.log('Handle CLick');
-    }
+export default function TabButton({ children, onSelect }) {
 
     return (
         <li>
-            <button onClick={handleClick}>{label}</button>
+            <button onClick={onSelect}>{children}</button>
         </li>
     );
 }

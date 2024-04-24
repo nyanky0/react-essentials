@@ -7,9 +7,13 @@
 // }
 
 export default function TabButton({ label }) {
+    function handleClick() {
+        console.log('Handle CLick');
+    }
+
     return (
         <li>
-            <button>{label}</button>
+            <button onClick={handleClick}>{label}</button>
         </li>
     );
 }
